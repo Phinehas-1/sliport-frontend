@@ -1,6 +1,5 @@
 import { Publisher } from "./Publisher";
 import { Report } from "./Report";
-
 export class Repository {
     constructor(dataStore) {
         this.dataStore = dataStore;

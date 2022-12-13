@@ -1,5 +1,5 @@
 export class Publisher {
-    constructor(private publisherName: string) { }
+    constructor(public publisherName: string) { }
 
     getPublisherName(): string {
         return this.publisherName;
