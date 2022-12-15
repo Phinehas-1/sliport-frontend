@@ -1,5 +1,5 @@
 export class Report {
-    constructor(private readonly monthOfReporting: string, private readonly publisherName: string, private readonly placement: number, private readonly videoShowing: number, private readonly hour: number, private readonly returnVisit: number, private readonly bibleStudy: number) { }
+    constructor(public readonly monthOfReporting: string, public readonly publisherName: string, public readonly placement: number, public readonly videoShowing: number, public readonly hour: number, public readonly returnVisit: number, public readonly bibleStudy: number) { }
 
     getMonthOfReporting(): string {
         return this.monthOfReporting;

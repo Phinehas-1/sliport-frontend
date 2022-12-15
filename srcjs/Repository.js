@@ -18,4 +18,7 @@ export class Repository {
         let report = new Report(reportForm['month-reporting'].value, reportForm['publisher-name'].value, reportForm['placement'].value, reportForm['video-showing'].value, reportForm['hour'].value, reportForm['return-visit'].value, reportForm['bible-study'].value);
         return this.dataStore.saveReport(report);
     }
+    getReports() {
+        return this.dataStore.getReports();
+    }
 }

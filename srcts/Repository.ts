@@ -19,8 +19,12 @@ export class Repository {
         return this.dataStore.getPublishers();
     }
 
-    addReport(reportForm: HTMLFormElement): boolean{
+    addReport(reportForm: HTMLFormElement): boolean {
         let report = new Report(reportForm['month-reporting'].value, reportForm['publisher-name'].value, reportForm['placement'].value, reportForm['video-showing'].value, reportForm['hour'].value, reportForm['return-visit'].value, reportForm['bible-study'].value);
         return this.dataStore.saveReport(report);
+    }
+
+    getReports(): Report[] {
+        return this.dataStore.getReports();
     }
 }
